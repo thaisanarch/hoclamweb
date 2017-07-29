@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+font-family: Verdana;
+}
+#page {
+width: 500px;
+height: 500px;
+border: 1px solid black;
+}
+.orange-border {
+position: relative;
+left: 0;
+top: 80px;
+z-index: 0;
+border: 10px solid #ff8820;
+width: 330px;
+height: 105px;
+border-radius: 10px;
+}
+.blue-rect {
+position: absolute;
+right: 0;
+bottom: 0;
+z-index: 3;
+background-color: lightblue;
+opacity: 0.75;
+width: 300px;
+height: 160px;
+}
+.green-rect {
+position: absolute;
+top: 10px;
+left: 0;
+right: 0;
+margin: auto;
+z-index:3;
+opacity: 0.2;
+background-color: green;
+width: 100px;
+height: 170px;
+}
+
+
+div.noidung h1 {
+position: absolute;
+font-size: 35.5px;
+font-weight: 200;
+bottom: -50px;
+left: 5px;
+z-index: 2;
+}
+
+.chunho {
+position: absolute;
+top: 200px;
+}
+
+.chunho p {
+font-weight: 300;
+letter-spacing: 10px;
+}
+.chunho p.chu {
+color: blue;
+}
+.chunho p.chu span {
+color: white;
+background-color: purple;
+padding-left: 20px;
+}
+</style>
+</head>
+<body>
+
+
+<div id="page">
+	<div class="orange-border">
+		<div class="blue-rect">
+        		<div class="chunho">
+    			<p>Manipulate Text</p>
+       		 	<p class="chu">Colors, <span>Boxes</span></p>
+    			</div>
+        	</div>
+      	        <div class="noidung">
+        		<h1>CSS = Styles and Colors</h1>
+      		</div>
+        	<div class="green-rect"></div>
+	</div>
+   
+</div>
+</body>
+</html>

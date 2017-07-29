@@ -1,0 +1,46 @@
+body {
+    font-family: roboto;
+    letter-spacing: 3px;
+    overflow: scroll;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    border: 1px solid gray;
+    padding: 5px;
+}
+.dropdown span {
+    color: black;
+    font-weight: 100;
+    font-size: 24px;
+}
+.dropdown span:hover {
+    color: orange;
+}
+
+.dropdown .content ul {
+    list-style-type: none;
+}
+.dropdown .content ul {
+    width: 200px;
+    }
+.dropdown .content ul li {
+    color: black;
+    opacity: 0.7;
+}
+
+.dropdown .content .openspace a {
+    text-decoration: none;
+      }
+.dropdown:hover .content {
+    display: block;
+    }
+.dropdown .content {
+    position: absolute;
+    right: 0;
+    display: none;
+    box-shadow: 5px 5px 5px gray;
+    margin: 20px;
+
+             }
