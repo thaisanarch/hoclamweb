@@ -251,6 +251,7 @@ body {
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-button .yellow-button i {
     margin: 0 10px;
     font-weight: 100;
+    color: white;
 }
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-button .black-button {
     color: white;
@@ -262,3 +263,53 @@ body {
     font-weight: 400;
 }
 /*title-button*/
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info {
+    display: inline-block;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button {
+    display: inline-block;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a1 {
+
+ }
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a1 .a1 img {
+    width: 50px;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a2 {
+
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a2 .a2 img {
+    width: 50px;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a3 {
+
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a3 .a3 img {
+    width: 50px;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a4 {
+
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a4 .a4 img {
+    width: 50px;
+}
+/*bimages-button*/
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail {
+
+}
+
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .description-button {
+
+}
+
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .features-button {
+
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .dimensions-button {
+
+}
+
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .description-button .price-button {
+
+}
+/* detail-images*/
