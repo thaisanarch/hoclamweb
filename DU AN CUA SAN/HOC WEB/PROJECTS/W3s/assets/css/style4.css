@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto";
+    background-image: url("../bai3/img/background/background.jpg");
+    /*opacity: 0.5;*/
+    background-size: cover;
+    /*margin: 40px;*/
+    /*background-color: #3b5998;*/
+    /*text-align: center;*/
+}
+.navigation {
+
+}
+.navigation .wrap-navigation {
+    text-align: center;
+    display: inline-block;
+}
+.navigation .wrap-navigation .logo {
+    display: inline-block;
+}
+.navigation .wrap-navigation .logo img {
+    width: 100px;
+}
+.navigation .wrap-navigation .menu {
+    display: inline-block;
+}
+.navigation .wrap-navigation .menu ul {
+    list-style-type: none;
+}
+.navigation .wrap-navigation .menu ul li {
+    display: inline-block;
+}
+.navigation .wrap-navigation .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+.navigation .wrap-navigation .social-icon {
+    display: inline-block;
+}
+.navigation .wrap-navigation .social-icon a {
+    display: inline-block;
+    margin-right: 20px;
+}
+.navigation .wrap-navigation .social-icon a i {
+    font-size: 30px;
+}
+.box {
+    background-image: url("../bai3/img/background/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*text-align: center;*/
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    border: 20px ridge #cbcbcb;
+    box-shadow: 5px 5px 15px;
+    padding: 50px;
+    /*background-color: red;*/
+}
+
+.box .h1-box {
+    margin: 20px 20px 30px;
+    text-align: center;
+}
+.box h1 {
+    letter-spacing: 5px;
+    /*text-align: center;*/
+    padding: 15px;
+    /*float: left;*/
+    display: inline-block;
+    border-radius: 10px;
+    background-color: white;
+    color: red;
+    border: 3px ridge gray;
+
+}
+.box p {
+    font-weight: 400;
+    /*display: inline-block;*/
+    /*margin-left: 200px;*/
+    padding: 5px;
+    text-align: center;
+    color: white;
+    /*opacity: 0.95;*/
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+.box p.nix {
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}

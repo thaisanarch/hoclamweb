@@ -1,5 +1,6 @@
 body {
     font-family: "Roboto";
+    /*background-color: red;*/
 }
 .wrapper {
     display: block;
@@ -9,6 +10,8 @@ body {
     background-image: url("../bai3/img/background/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed;
+    /*background-size: contain;*/
 }
 .wrapper #home-page .navigation {
     padding: 20px;
@@ -168,62 +171,111 @@ body {
     font-size: 20px;
     text-shadow: 3px 3px 5px black;
 }
-.wrapper #home-page .home-content .triangle-01 {
-    /*box-sizing: border-box;*/
-    height: 0;
-    width: 0;
-    /*background-color: #0a97ff;*/
-    border-top: 0px solid #38baff;
-    border-left: 350px solid #38baff;
-    border-right: 0px solid transparent;
-    border-bottom: 450px solid transparent;
 
-}
-/*.content1 .triangle-02 {*/
-    /*width         : 0;*/
-    /*height        : 0;*/
-    /*transform     : rotate(90deg);*/
-    /*border-left   : 0px solid transparent;*/
-    /*border-right  : 300px solid transparent;*/
-    /*border-bottom : 200px solid #358;*/
-/*}*/
-/*Triangle 2 e*/
 .wrapper #home-page .home-content {
     position: relative;
-    width: 50%;
+    width: 850px;
     height: 450px;
     background-color: white;
     left: 0;
     right: 0;
     margin: auto;
     box-shadow: 3px 3px 10px gray;
+    background-image: url("../bai3/img/background/blue-triangle.png");
+    background-repeat: no-repeat;
+    background-size: 400px 450px;
 }
-.wrapper #home-page .home-content .boat {
-    position: absolute;
-    top: 0;
-    left: -30px;
+/*.wrapper #home-page .home-content .wrap-content {*/
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*z-index: 0;*/
+.wrapper #home-page .home-content .wrap-content {
+    /*display: inline-block;*/
+    float: left;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*width: 400px;*/
+    /*z-index: 0;*/
+}
+
+/*.wrapper #home-page .home-content .triangle-01 {*/
+    /*!*box-sizing: border-box;*!*/
+    /*height: 0;*/
+    /*width: 0;*/
+    /*!*background-color: #0a97ff;*!*/
+    /*border-top: 0px solid #38baff;*/
+    /*border-left: 400px solid #38baff;*/
+    /*border-right: 0px solid transparent;*/
+    /*border-bottom: 450px solid transparent;*/
+/*}*/
+/*.content1 .triangle-02 {*/
+/*width         : 0;*/
+/*height        : 0;*/
+/*transform     : rotate(90deg);*/
+/*border-left   : 0px solid transparent;*/
+/*border-right  : 300px solid transparent;*/
+/*border-bottom : 200px solid #358;*/
+/*}*/
+/*Triangle 2 e*/
+.wrapper #home-page .home-content .wrap-content .boat {
     transform: scale(0.7, 0.7);
 }
-.wrapper #home-page .home-content .wrap-tab-info {
+.wrapper #home-page .home-content .text-content {
+    /*position: absolute;*/
+    /*transform: rotate(270deg);*/
+    display: inline-block;
+    /*right: 0;*/
+    /*bottom: 0;*/
+}
+.wrapper #home-page .home-content .text-content h1 {
+    letter-spacing: 34px;
+    margin: 0;
+    transform: rotate(270deg);
+    position: absolute;
+    bottom: 184.5px;
+    right: -215px;
+    opacity: 0.1;
+    text-align: right;
+    font-size: 100px;
 
+    /*text-align: center;*/
+}
+.wrapper #home-page .text-content1 h1 {
+    letter-spacing: 34px;
+    margin: 150px 0 0 0;
+    opacity: 0.1;
+    font-size: 100px;
+    clear: both;
+}
+.wrapper #home-page .home-content .tab-info {
+    float: right;
+    /*height: 454.5px;*/
+}
+.wrapper #home-page .home-content .wrap-tab-info {
+    display: inline-block;
+    /*float: right;*/
+    /*margin-top: 50px;*/
 }
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: -37px;
+    /*display: inline-block;*/
+    text-align: right;
+    /*margin-left: 60px;*/
+    margin: 30px 0;
 }
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-tab {
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: left;
 }
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-tab h3 {
     font-weight: 800;
     text-align: left;
     margin-bottom: 0;
+    margin-left: 75px;
 }
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-tab .star {
     display: inline-block;
+    margin-left: 75px;
+    margin-top: 10px;
 }
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-tab .star a {
     text-decoration: none;
@@ -233,83 +285,171 @@ body {
 }
 .wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-tab .star p {
     display: inline-block;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
+    margin: 0;
 }
 /* title-tab*/
-.wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-button {
-    display: inline-block;
-    /*margin-left: 0px;*/
-}
-.wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-button .yellow-button {
+.wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-tab .title-button {
+    float: right;
     /*display: inline-block;*/
-    color: white;
-    padding: 7px 2px;
-    height: 15px;
-    background-color: #ffe736;
-    margin-left: 55px;
 }
-.wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-button .yellow-button i {
-    margin: 0 10px;
-    font-weight: 100;
-    color: white;
-}
-.wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-button .black-button {
+.wrapper #home-page .home-content .wrap-tab-info .title-tab-info .title-tab .title-button .black-button {
     color: white;
     display: inline-block;
-    padding: 7px 10px;
-    height: 15px;
+    padding: 8px 12px;
     background-color: black;
     font-size: 14px;
     font-weight: 400;
+    /*margin-left: 50px;*/
+}
+.wrapper #home-page .home-content .yellow-button {
+    /*text-align: right;*/
+    display: inline-block;
+    position: absolute;
+    right: -37px;
+    top: 47px;
+}
+.wrapper #home-page .home-content  .yellow-button a {
+    color: white;
+    padding: 8px 12px;
+    background-color: #ffe736;
+    text-decoration: none;
+    /*margin-left: 55px;*/
+}
+.wrapper #home-page .home-content .yellow-button a:hover {
+    background-color: #fff544;
+}
+.wrapper #home-page .home-content .yellow-button i {
+    color: white;
 }
 /*title-button*/
 .wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info {
     display: inline-block;
+    /*vertical-align: top;*/
+    /*position: relative;*/
+    /*bottom: 350px;*/
+    /*left: 250px;*/
 }
 .wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button {
     display: inline-block;
+    /*vertical-align: top;*/
 }
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a1 {
-
- }
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a1 .a1 img {
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button a {
+    text-decoration: none;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button a img {
     width: 50px;
+    border: 1px solid gray;
+    display: block;
+    margin: 0 0 5px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    transition: transform 0.8s;
 }
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a2 {
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button a img:hover {
+    border: 2px solid #39c3ff;
+    box-shadow: 1px 1px 5px #39c3ff;
+
+    transform: scale(0.9, 0.9) rotatey(180deg);
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button a img:active {
+    box-shadow: 1px 1px 5px black;
+    opacity: 0.5;
+    transform: rotatey(-180deg);
 
 }
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a2 .a2 img {
-    width: 50px;
-}
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a3 {
 
-}
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a3 .a3 img {
-    width: 50px;
-}
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a4 {
 
-}
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button .wrap-button-a4 .a4 img {
-    width: 50px;
-}
-/*bimages-button*/
+/*images-button*/
+
 .wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail {
+    /*display: inline-block;*/
+    height: 228px;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 
 }
-
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .description-button {
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .paragraph {
+    display: block;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .paragraph p {
+    text-align: left;
+    width: 350px;
+    height: auto;
+    word-spacing: 2px;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 40px;
+    /*margin-left: 20px;*/
+    /*display: none;*/
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .paragraph-2 {
+    display: none;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .paragraph-3 {
+    display: none;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 800;
+    transition: color 0.3s;
 
 }
+/*.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail ul li.description-button a {*/
+    /*color: black;*/
+/*}*/
+/*.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail ul li a:hover:not(.description-button) {*/
+    /*color: black;*/
+/*}*/
+/* C1: Hover active for li icon*/
 
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .features-button {
-
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail ul li a:hover {
+    color: black;
+    border-bottom: 2px solid #39c3ff;
 }
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .dimensions-button {
-
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .price {
+    display: block;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .price  .price-button {
+    text-align: left;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .price  .price-button h3 {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    font-weight: 800;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .price .price-button .buy-now {
+    background-color: #38BAFF;
+    font-size: 14px;
+    padding: 13px 30px;
+    color: white;
+    letter-spacing: 3px;
+    /*border: 2px solid transparent;*/
+    display: inline-block;
+    cursor: pointer;
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .price .price-button .buy-now:hover {
+    background-color: #2990ff;
+    /*border: 2px solid #39c3ff;*/
+    /*box-shadow: 0 0 2px #39c3ff inset;*/
+}
+.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .wrap-img-button-detail .price .price-button .buy-now:active {
+    background-color: #54caff;
+    box-shadow: 0 0 10px #2990ff inset;
 }
 
-.wrapper #home-page .home-content .wrap-tab-info .snippet-tab-info .img-button-detail .description-button .price-button {
-
-}
 /* detail-images*/
