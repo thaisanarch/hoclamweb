@@ -1,0 +1,335 @@
+/**
+ * ==============================================
+ *	Style Name:	Porfolio. ThaiSan theme Css
+ *	Author:		HTS
+ *	Link:		https://thaisanarch.vn
+ *	Version:	Developing
+ *
+ * ==============================================
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: white;
+    background-color: #222222;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+/*Start-Nav*/
+#nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#nav .wrap-nav {
+    /*position: fixed;*/
+    height: 100vh;
+}
+
+#nav .wrap-nav .nav-hor {
+    width: 100vw;
+    height: 60px;
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*overflow: hidden;*/
+    /*background-color: #222222;*/
+
+}
+
+/* Start-Icon 3 */
+#nav .wrap-nav .nav-hor .nav-icon {
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    box-shadow: inset -2px -2px #cbcbcb;
+    /*float: left;*/
+    display: inline-block;
+    background-color: #222222;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#nav-icon3 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 16px 14px;
+    /*margin: 50px auto;*/
+    /*-webkit-transform: rotate(0deg);*/
+    /*-moz-transform: rotate(0deg);*/
+    /*-o-transform: rotate(0deg);*/
+    /*transform: rotate(0deg) translate(-2%, 27%);*/
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    /*left: 50%;*/
+    margin: auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+    top: 10px;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 20px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+/*end-nav-icon*/
+#nav .wrap-nav .nav-hor .nav-content {
+    box-shadow: inset 0px -2px #cbcbcb;
+    /*float: left;*/
+    display: inline-block;
+    /*border-left: 50px solid transparent;*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #222222;
+    height: 60px;
+    /*line-height: 50px;*/
+    /*display: table;*/
+}
+
+#nav .wrap-nav .nav-hor .nav-content a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 30%;
+    font-weight: 100;
+    margin-left: 20px;
+    display: inline-block;
+    /*display: table-cell;*/
+    /*text-align: center;*/
+}
+
+#nav .wrap-nav .nav-hor .nav-content a span {
+    font-weight: 700;
+}
+
+/*Start-Nav-Ver*/
+#nav .wrap-nav .nav-ver {
+    background-color: #222222;
+    position: fixed;
+    writing-mode: vertical-rl;
+    left: 0;
+    transformm: rotatez(180deg);
+    height: 100vh;
+    width: 60px;
+    overflow: hidden;
+    text-align: right;
+    box-shadow: inset -2px 0 #cbcbcb;
+}
+
+#nav .wrap-nav .nav-ver .social-icon {
+    display: inline-block;
+    margin: 0px 0px 8vh;
+    /*position: absolute;*/
+
+}
+
+#nav .wrap-nav .nav-ver a {
+    text-decoration: none;
+}
+
+#nav .wrap-nav .nav-ver a i {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 17px;
+    /*vertical-align: middle;*/
+}
+
+/*End-Nav-Ver*/
+/*End-Nav*/
+
+/*<!--Start-Home-page-->*/
+#home-page {
+    z-index: 0;
+    /*border-style: solid;*/
+    /*border-width: 60px 0px 0px 60px;*/
+    /*margin: 0px 0 0 60px;*/
+    position: relative;
+    background-image: url("../../../assets/img/homepage/Background-home-page.jpg");
+    height: 698px;
+    background-size: 100%;
+    color: white;
+}
+
+/*#home-page .background {*/
+/*background-image: url("../../../assets/img/homepage/Background-home-page.jpg");*/
+/*height: 100vh;*/
+/*background-size: 100%;*/
+/*}*/
+#home-page:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    opacity: 0.4;
+    background-color: black;
+    z-index: 2;
+}
+
+/*Start-content-home-page*/
+#home-page .content-home-page {
+
+    position: absolute;
+    /*left: 50%;*/
+    text-align: center;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, 55%);
+}
+
+#home-page .content-home-page .slogan {
+    display: inline-block;
+}
+
+#home-page .content-home-page .slogan h2 {
+    font-size: 3em;
+    font-weight: 400;
+
+}
+
+#home-page .content-home-page .slogan .small-text {
+    /*display: table;*/
+}
+
+#home-page .content-home-page .slogan .small-text span:nth-child(1) {
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+    /*display: table-cell;*/
+    background-color: white;
+    float: left;
+}
+
+#home-page .content-home-page .slogan .small-text span:nth-child(3) {
+    width: 50px;
+    height: 2px;
+    display: block;
+    background-color: white;
+    float: right;
+    margin-top: 10px;
+}
+
+#home-page .content-home-page .slogan .small-text p {
+    font-weight: 400;
+    display: inline-block;
+    letter-spacing: 2px;
+    /*display: table-cell;*/
+}
+
+#home-page .content-home-page .slogan h1 {
+    font-size: 5.2em;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#home-page .content-home-page .button {
+    /*background-color: transparent;*/
+    /*padding: 5px 20px;*/
+    /*border: 2px solid white;*/
+    display: block;
+    margin: 60px;
+
+}
+
+#home-page .content-home-page .button a {
+    color: #f7f7f7;
+    border: 2px solid white;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+#home-page .content-home-page .mouse-icon {
+    display: block;
+    margin: 50px;
+    /*text-align: center;*/
+}
+#home-page .content-home-page .mouse-icon a {
+    background-image: url("../../img/homepage/mouse.png");
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 48px;
+    display: inline-block;
+}
+#home-page .content-home-page .johann-slogan {
+    margin-top: 50px;
+}
+#home-page .content-home-page .johann-slogan p.p1 {
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+#home-page .content-home-page .johann-slogan p.p2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/*#home-page .content-home-page .more-button:hover {*/
+/*background-color: #222222;*/
+/*}*/
+/*End-content-home-page*/
+/*<!--End-Home-Page-->*/
